@@ -1,0 +1,78 @@
+<form
+action="form-to-email.php"
+method="POST"
+id="form1"
+>
+<h3>Feedback Submission Form</h3>
+<fieldset>
+  <legend>Your Info</legend>
+  <br />
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" />
+  <br />
+  <br />
+  <label for="fromaddress">Email:</label>
+  <input type="text" id="fromaddress" name="fromaddress" />
+  <br />
+  <br />
+  <label for="address">Address:</label>
+  <input type="text" name="address" id="address" size="50" />
+  <br />
+  <br />
+  <label for="city">City:</label>
+  <input type="text" name="city" id="city" />
+  <label for ="state">State:</label>
+  <input type="text" name="state" id="state"/>
+  <label for="postalcode">Zip code:</label>
+  <input type="text" name="postalcode" id="postalcode" size="6" />
+  <label for="country">Country:</label>
+  <input type="text" name="country" id="country" />
+</fieldset>
+
+<br />
+<br />
+
+<div id="siterating">
+  <p>Rate my site on a scale from 1 to 5:</p>
+  <input type="radio" name="rating" value="1" id="1"  />
+  <label for="1">1</label>
+  <input type="radio" name="rating" value="2" id="2"  />
+  <label for="2">2</label>
+  <input type="radio" name="rating" value="3" id="3"  />
+  <label for="3">3</label>
+  <input type="radio" name="rating" value="4" id="4"  />
+  <label for="4">4</label>
+  <input type="radio" name="rating" value="5" id="5"  />
+  <label for="5">5</label>
+</div>
+
+<br />
+<br />
+
+<div id="div-textarea">
+  <p> Please enter your feedback here:</p>
+  <textarea rows="4" cols="50" name="textarea" id="gentextarea"></textarea>
+  <br />
+  <br />
+</div>
+
+<input
+  type="hidden"
+  name="toaddress"
+  value="peterderuvo@gmail.com"
+/>
+<input 
+  type="hidden" 
+  name="ccaddress" 
+  value="todd.wolfe@esc.edu" />
+<input
+  type="hidden"
+  name="subject"
+  value="WSD: Assignment M5.2 - PHP Feedback Form for Peter DeRuvo"
+/>
+<input type="hidden" name = "formtype" value = "fb" />
+<input type="submit">
+<br />
+<br />
+<input type="reset">
+</form>
