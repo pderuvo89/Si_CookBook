@@ -205,6 +205,7 @@ function enterIngredients($conn, $ingredient, $measure, $amount, $title){
     $rid = $row["Rid"];
     }
     }
+    
     $sql = "SELECT id
     FROM ingredient
     ORDER BY id DESC
